@@ -4,11 +4,9 @@
              xmlns:local="clr-namespace:HoopRun"
              x:Class="HoopRun.MainPage">
 
-    <StackLayout>
+    <Grid x:Name="mainStackLayout">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+        <WebView x:Name="hoopRunWebView" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HeightRequest="9"/>
+    </Grid>
 
 </ContentPage>

@@ -17,6 +17,8 @@ namespace HoopRun.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            this.Window.AddFlags(WindowManagerFlags.Fullscreen);
+
             base.OnCreate(savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
